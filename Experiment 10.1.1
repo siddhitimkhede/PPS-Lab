@@ -1,0 +1,10 @@
+text = input()
+
+# Remove punctuation
+result = ""
+for char in text:
+    if char.isalnum() or char.isspace():
+        result += char
+
+# Print result
+print(result)
