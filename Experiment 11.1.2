@@ -1,0 +1,23 @@
+def sum_of_digits_recursive(n):
+
+#	if n == 0:
+#        return 0
+#	return(n % 10) + sum_of_digits_recursive(n // 10))
+
+
+
+# Write your code here
+#number = int(input())
+#result = sum_of_digits_recursive(number)	
+
+#print(result)def sum_of_digits_recursive(n):
+    # Base case
+    if n == 0:
+        return 0
+    # Recursive case
+    return (n % 10) + sum_of_digits_recursive(n // 10)
+
+# Read input
+number = int(input())
+result = sum_of_digits_recursive(number)
+print(result)
