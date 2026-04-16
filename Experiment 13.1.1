@@ -1,0 +1,23 @@
+# Write your code here......
+import fibonacci_module
+n = int(input())
+
+if n > 0:
+	fib_series = fibonacci_module.generate_fibonacci_sequence(n)
+	print(' '.join(map(str, fib_series)))
+else:
+	print("Please enter a positive integer")
+
+
+
+
+
+
+def generate_fibonacci_sequence(max_value):
+    fib = [0, 1]
+    while True:
+        next_val = fib[-1] + fib[-2]
+        if next_val > max_value:
+            break
+        fib.append(next_val)
+    return fib
